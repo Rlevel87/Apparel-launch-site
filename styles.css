@@ -1,0 +1,222 @@
+
+:root{
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Josefin sans', sans-serif; 
+    background-color: hsl(351, 100%, 96%);
+}
+.logo{
+    padding: 2rem;
+}
+.logoImage{
+    width: 110px;
+    height: 25px;
+}
+
+.heroImage{
+    width: 100%
+}
+.contentContainer{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px;
+}
+.comingSoon,.font{
+    letter-spacing: 10px;
+    line-height: 35px;   
+}
+.comingSoon{
+    font-weight: 600;
+    font-family: 'josefin sans';
+
+}
+.font{
+    font-family: 'Josefin sans';
+    color: var(--DesaturatedRed);
+    font-weight: 200;
+}
+p{
+    color: var(--DesaturatedRed);
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 25px;
+    font-size: 15px; 
+}
+
+#emailAddress{
+    margin-top: 2rem;
+    border: 1px solid hsl(0, 0%, 0%, .3);
+    border-radius: 5rem;
+    height: 3rem;
+    width: 18rem;
+    text-indent: 20px;
+    background-color: hsl(351, 100%, 96%);
+   
+}
+#emailAddress::placeholder{
+    color: hsl(0, 0%, 0%,.3);
+}
+.arrow{
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    width: 4rem;
+    height: 3rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: 2rem;    
+}
+#arrowImg{
+    margin: 0 auto;
+}
+#alert{
+    color: red;
+}
+#alert{
+    display: none;
+}
+#error{
+    display: none;
+    position: absolute;
+    margin-left: -6rem;
+    margin-top: 2.8rem;
+}
+footer{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 1032px){
+    html, body{
+    height: 100%;
+    margin: 0;
+}
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100vh;
+    }
+    .imageContainer{
+        width: 40%;
+           
+    }     
+    .contentContainer{
+        width: 60%;
+        height: 100vh;
+        text-align: left;
+        margin-top: 15rem;
+        padding-left: 9rem;
+        
+    }
+    .logo{
+        position: absolute;
+        margin-left: -32rem;
+        margin-top: 2rem;
+    }
+    .hero{
+        height: 100vh;
+    }
+    .heroImage{
+        height: 100%;
+        object-fit: cover;
+    }
+    .comingSoon,.font{
+        letter-spacing: 10px;
+        line-height: 70px;
+        font-size: 70px;   
+    }
+    .comingSoon{
+        font-weight: 600;
+        font-family: 'josefin sans';
+    
+    }
+    .font{
+        font-family: 'Josefin sans';
+        color: var(--DesaturatedRed);
+        font-weight: 200;
+    }
+    p{
+        color: var(--DesaturatedRed);
+        width: 400px;
+        font-weight: 400;
+        margin-top: 1rem;
+        line-height: 30px;
+        font-size: 15px; 
+    }
+    #emailAddress{
+        width: 26rem;    
+    }
+    .arrow{
+        width: 5.5rem;
+        margin-left: -5rem;
+    }
+    #error{
+        margin-left: -7.5rem;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+    }
+}
+#alert p{
+    text-indent: 1.5rem;
+    
+}
+@media (min-width: 1116px){
+    .logo{
+        margin-left: -35rem;    
+    }
+}
+@media (min-width: 1200px){
+    .logo{
+        margin-left: -39rem;       
+    }
+}
+@media (min-width: 1300px){
+    .logo{
+        margin-left: -42rem;       
+    }
+}
+@media (min-width: 1440px){
+    .logo{
+        margin-left: -47.5rem;
+    }
+}
+@media (min-width: 1540px){
+    .logo{
+        margin-left: -52rem;
+    }
+}
+@media (min-width: 1640px){
+    .logo{
+        margin-left: -55rem;
+    }
+}
+@media (min-width: 1640px){
+    .logo{
+        margin-left: -58rem;
+    }
+}
+@media (min-width: 1840px){
+    .logo{
+        margin-left: -64rem;
+    }
+}
